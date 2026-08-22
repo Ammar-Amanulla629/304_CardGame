@@ -4,7 +4,8 @@ Cards = {
 In_game = []
 x = 0
 for i in range(0,4):
-     x = input("Place your card in hand: ")
-     In_game.append(x)
+     while x not in Cards:
+        x = input("Place your card in hand: ")
+        In_game.append(x)
 print([In_game])
 
